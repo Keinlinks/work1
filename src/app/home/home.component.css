@@ -1,0 +1,22 @@
+.background {
+  background-color: var(--primary-color);
+  padding: 0.4rem 0;
+  color: white;
+}
+section {
+  height: 100%;
+}
+.list {
+  height: 93%;
+}
+.item-list {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.2rem;
+}
+.item-list a {
+  text-decoration: none;
+  margin-top: 4px;
+  color: black;
+}

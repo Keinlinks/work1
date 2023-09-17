@@ -1,0 +1,51 @@
+<section>
+  <mat-toolbar class="background">
+    <button
+      mat-icon-button
+      aria-label="Example icon-button with menu icon"
+      (click)="nav_toggle = !nav_toggle"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>CRM BTS</span>
+    <span class="example-spacer"></span>
+  </mat-toolbar>
+
+  <mat-drawer-container class="list">
+    <mat-drawer mode="side" [opened]="nav_toggle">
+      <mat-list role="list">
+        <mat-list-item role="listitem"
+          ><div class="item-list">
+            <mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              fontIcon="group"
+            ></mat-icon>
+            <a routerLink="clientes">Clientes</a>
+          </div></mat-list-item
+        >
+        <mat-list-item role="listitem"
+          ><div class="item-list">
+            <mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              fontIcon="inventory_2"
+            ></mat-icon>
+            <a routerLink="productos">Productos</a>
+          </div></mat-list-item
+        >
+        <mat-list-item role="listitem"
+          ><div class="item-list">
+            <mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              fontIcon="settings"
+            ></mat-icon>
+            <a routerLink="notificaciones">Notificaciones</a>
+          </div></mat-list-item
+        >
+      </mat-list>
+    </mat-drawer>
+    <mat-drawer-content><router-outlet></router-outlet></mat-drawer-content>
+  </mat-drawer-container>
+</section>

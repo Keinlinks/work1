@@ -1,0 +1,47 @@
+.background {
+  padding: 2rem 2.5rem;
+}
+.button {
+  margin-top: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+  width: 33%;
+  height: auto;
+}
+.contenido p {
+  text-wrap: wrap;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.icon_right {
+  word-wrap: break-word;
+  width: 95%;
+}
+
+.contenido {
+  width: 100%;
+}
+.notification {
+  width: 50%;
+
+  padding: 1rem 1rem;
+
+  border-radius: 7px;
+}
+.icon {
+  display: flex;
+  gap: 1rem;
+}
+.icon .categoria {
+  font-weight: 700;
+  padding: 0.1rem 0;
+}
+.icon .type {
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.1rem 0;
+}
